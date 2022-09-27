@@ -2,3 +2,15 @@
   margin: 0;
   padding: 0;
 }
+
+.nav-brand {
+  text-decoration: none;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline;
+}
