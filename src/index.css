@@ -1,0 +1,56 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.header-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-logo > img {
+  width: 3rem;
+  height: 3rem;
+  margin: 0.25rem 1rem;
+}
+
+nav > ul {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+}
+
+nav > ul > li {
+  margin-left: 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+tr:nth-child(even) {
+  background-color: #f3f1f1;
+}
+
+.td-selected {
+  width: 8rem;
+}
+
+.tag-member {
+  background-color: gray;
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: white;
+  padding: 0.125rem 0.2rem;
+  text-align: center;
+  border-radius: 3px;
+}
