@@ -12,20 +12,20 @@ header {
   align-items: center;
 }
 
-.header-logo>img {
+.header-logo > img {
   width: 3rem;
   height: 3rem;
   margin: 0.25rem 1rem;
 }
 
-nav>ul {
+nav > ul {
   display: flex;
   padding: 0;
   list-style: none;
   align-items: center;
 }
 
-nav>ul>li {
+nav > ul > li {
   margin-left: 1rem;
 }
 
