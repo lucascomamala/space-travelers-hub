@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# React Bookstore
+# React SpaceShip
 
 Web application for a company that provides commercial and scientific space travel services. The application allows its users to book rockets and join selected space missions.
 
@@ -34,6 +34,12 @@ To get a local copy up and running follow these simple example steps.
 
 - GitHub: [@lucascomamala](https://github.com/lucascomamala/)
 - LinkedIn: [Lucas Comamala](https://linkedin.com/in/lucas-comamala/)
+
+👤 **Neeraj Bhardwaj**
+
+- GitHub: [@rebel216](https://github.com/rebel216)
+- Twitter: [@rebel216](https://twitter.com/rebel216)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/rebel216)
 
 ## 🤝 Contributing
 
