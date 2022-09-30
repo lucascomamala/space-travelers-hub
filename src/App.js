@@ -22,7 +22,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/missions" element={<Missions />} />
-          <Route path="/" element={<RocketsPage />} />
+          <Route path="/rockets" element={<RocketsPage />} />
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/*" element={<h1>Don&apos;t exist</h1>} />
         </Routes>
