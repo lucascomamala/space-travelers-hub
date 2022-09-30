@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/navbar';
-import RocketsPage from './components/rocketsPage';
+import RocketsPage from './components/rockets/rocketsPage';
 import MissionsPage from './components/missionsPage';
 import ProfilePage from './components/profilePage';
 
