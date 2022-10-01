@@ -10,6 +10,24 @@ import Navbar from './components/navbar';
 import RocketsPage from './components/rockets/rocketsPage';
 import ProfilePage from './components/profilePage';
 
+const routes = [
+  {
+    id: 1,
+    path: '/',
+    name: 'Rockets',
+  },
+  {
+    id: 2,
+    path: '/missions',
+    name: 'Missions',
+  },
+  {
+    id: 2,
+    path: '/profile',
+    name: 'My Profile',
+  },
+];
+
 function App() {
   const API_MISSIONS = 'https://api.spacexdata.com/v3/missions';
   const dispatch = useDispatch();
@@ -19,12 +37,12 @@ function App() {
   return (
     <div className="App">
       <Router className="App">
-        <Header />
+        <Header title="Space Travelers&apos; Hub" routes={routes} />
         <Routes>
+          <Route path="/" element={<RocketsPage />} />
           <Route path="/missions" element={<Missions />} />
-          <Route path="/rockets" element={<RocketsPage />} />
           <Route path="/profile" element={<ProfilePage />} />
-          <Route path="/*" element={<h1>Don&apos;t exist</h1>} />
+          <Route path="/*" element={<p>404 Page not found</p>} />
         </Routes>
       </Router>
     </div>
