@@ -9,6 +9,7 @@ const WrapperHeader = styled.div`
   align-items: center;
   justify-content: center;
   border-bottom: 1px lightgray solid;
+  padding: 1rem 0;
 `;
 
 const Container = styled.div`

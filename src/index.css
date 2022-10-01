@@ -25,6 +25,7 @@ nav > ul {
   padding: 0;
   list-style: none;
   align-items: center;
+  margin-top: 1rem;
 }
 
 nav > ul > li {
