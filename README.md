@@ -13,7 +13,7 @@ Web application for a company that provides commercial and scientific space trav
 
 ## Live Demo (if available)
 
-[Live Demo Link] (COMING SOON!)
+[Live Demo Link](https://heartfelt-squirrel-c4bce5.netlify.app)
 
 
 ## Getting Started
