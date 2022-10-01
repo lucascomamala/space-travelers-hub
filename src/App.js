@@ -6,7 +6,6 @@ import { fetchApiMissions } from './redux/missionsSlice';
 import Missions from './components/missionsPage';
 import Header from './components/Header';
 import './index.css';
-import Navbar from './components/navbar';
 import RocketsPage from './components/rockets/rocketsPage';
 import ProfilePage from './components/profilePage';
 
