@@ -1,28 +1,36 @@
 /* eslint-disable no-unused-vars */
 
 import PropTypes from 'prop-types';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import {
   Badge, Card, Button,
 } from 'react-bootstrap';
+import { reserveRocket, cancelRocketReservation } from '../../redux/rocketsSlice';
 
 const Rocket = ({ rocket }) => {
   const dispatch = useDispatch();
-  const rockets = useSelector((state) => state.Rockets);
   const {
     id, rocketName, description, rocketImages, reserved,
   } = rocket;
+
+  const handleReserve = (e) => {
+    if (!reserved) {
+      dispatch(reserveRocket(+e.target.id));
+    } else {
+      dispatch(cancelRocketReservation(+e.target.id));
+    }
+  };
 
   return (
     <div className="rocket-card">
       <img src={rocketImages[0]} alt="rocket" className="rocket-img" />
       <div className=" card-body">
-        <Card.Title>{rocketName}</Card.Title>
+        <h4>{rocketName}</h4>
         <Card.Text>
           {reserved ? <Badge bg="info" className="me-2">Reserved</Badge> : ''}
           {description}
         </Card.Text>
-        <Button className="align-self-start" variant={reserved ? 'outline-secondary' : 'primary'} id={id}>
+        <Button className="align-self-start" variant={reserved ? 'outline-secondary' : 'primary'} id={id} onClick={handleReserve}>
           {reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
         </Button>
       </div>
