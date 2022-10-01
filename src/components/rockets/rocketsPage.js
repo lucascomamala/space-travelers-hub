@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchRockets } from '../../redux/rocketsSlice';
 import Rocket from './rocket';
+import './rockets.css';
 
 const RocketsPage = () => {
   const dispatch = useDispatch();
@@ -15,7 +16,6 @@ const RocketsPage = () => {
 
   return (
     <div className="rockets-page">
-      <h1>Rockets</h1>
       <div className="rockets-container">
         {rockets.map((rocket) => (
           <Rocket key={rocket.id} rocket={rocket} />

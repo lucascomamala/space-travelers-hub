@@ -17,7 +17,7 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  max-width: 60rem;
+  max-width: 80rem;
 `;
 
 function Header({ title, routes }) {
