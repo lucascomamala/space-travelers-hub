@@ -12,7 +12,7 @@ const WrapperProfile = styled.div`
   justify-content: space-between;
   margin: 1rem auto;
   width: 90%;
-  max-width: 60rem;
+  max-width: 70rem;
   text-align: left;
   gap: 0.5rem;
 `;
