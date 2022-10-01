@@ -32,7 +32,7 @@ const fetchRockets = () => async (dispatch) => {
     rocketName: rocket.rocket_name,
     description: rocket.description,
     rocketImages: rocket.flickr_images,
-    reserved: true,
+    reserved: false,
   }));
   dispatch(rocketsFetched(newState));
 };

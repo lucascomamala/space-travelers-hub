@@ -1,0 +1,22 @@
+.rockets-page {
+  width: 90%;
+  max-width: 70rem;
+  margin: 1rem auto;
+}
+
+.rockets-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.rocket-card {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.rocket-img {
+  width: 300px;
+  height: 230px;
+}

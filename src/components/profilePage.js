@@ -10,7 +10,7 @@ const WrapperProfile = styled.div`
   flex-grow: 1;
   align-items: flex-start;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 1rem auto;
   width: 90%;
   max-width: 60rem;
   text-align: left;
@@ -30,6 +30,7 @@ const ContainerCard = styled.div`
 `;
 
 function Profile() {
+  const rockets = useSelector((state) => state.rockets);
   const missions = useSelector(selectMissions);
   return (
     <WrapperProfile>
@@ -37,6 +38,12 @@ function Profile() {
         <h2>My Missions</h2>
         {missions.map(
           (mission) => mission.join && <Card key={mission.id} name={mission.name} />,
+        )}
+      </WrapperCards>
+      <WrapperCards>
+        <h2>My Rockets</h2>
+        {rockets.map(
+          (rocket) => rocket.reserved && <Card key={rocket.id} name={rocket.rocketName} />,
         )}
       </WrapperCards>
     </WrapperProfile>

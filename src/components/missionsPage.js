@@ -14,7 +14,7 @@ const WrapperMissions = styled.div`
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  max-width: 60rem;
+  max-width: 70rem;
   text-align: left;
 `;
 
