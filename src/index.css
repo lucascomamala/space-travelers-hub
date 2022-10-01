@@ -33,6 +33,10 @@ nav > ul > li {
   text-decoration: none;
 }
 
+.nav-link.active {
+  text-decoration: underline;
+}
+
 .App-link {
   color: #61dafb;
 }

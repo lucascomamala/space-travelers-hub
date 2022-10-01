@@ -20,36 +20,23 @@ const Container = styled.div`
   max-width: 60rem;
 `;
 
-function Header() {
+function Header({ title, routes }) {
   return (
     <WrapperHeader>
       <Container>
         <div className="header-logo">
           <img src="logo.png" alt="logo space travelers" />
-          <h1>Space Travelers&apos; Hub</h1>
+          <h1>{title}</h1>
         </div>
         <nav>
           <ul>
-            <li>
-              <LinkNavComponent to="/">
-                <p>Rockets</p>
-              </LinkNavComponent>
-            </li>
-            <li>
-              <LinkNavComponent to="/dragons">
-                <p>Dragons</p>
-              </LinkNavComponent>
-            </li>
-            <li>
-              <LinkNavComponent to="/missions">
-                <p>Mission</p>
-              </LinkNavComponent>
-            </li>
-            <li>
-              <LinkNavComponent to="/profile">
-                <p>My Profile</p>
-              </LinkNavComponent>
-            </li>
+            {routes.map(({ name, path }) => (
+              <li key={path}>
+                <NavLink className="nav-link" to={path} end>
+                  {name}
+                </NavLink>
+              </li>
+            ))}
           </ul>
         </nav>
       </Container>
@@ -57,25 +44,13 @@ function Header() {
   );
 }
 
-const LinkNavComponent = ({ children, ...restProps }) => {
-  const { to } = restProps;
-  const activeStyle = {
-    textDecoration: 'underline',
-  };
-
-  return (
-    <NavLink
-      to={to}
-      className="nav-link"
-      style={({ isActive }) => (isActive ? activeStyle : undefined)}
-    >
-      {children}
-    </NavLink>
-  );
-};
-
-LinkNavComponent.propTypes = {
-  children: PropTypes.element.isRequired,
+Header.propTypes = {
+  title: PropTypes.string.isRequired,
+  routes: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    path: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+  })).isRequired,
 };
 
 export default Header;
