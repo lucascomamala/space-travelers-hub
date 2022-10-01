@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const WrapperHeader = styled.div`
   display: flex;
@@ -24,10 +24,10 @@ function Header({ title, routes }) {
   return (
     <WrapperHeader>
       <Container>
-        <div className="header-logo">
+        <Link className="header-logo" to="/">
           <img src="logo.png" alt="logo space travelers" />
           <h1>{title}</h1>
-        </div>
+        </Link>
         <nav>
           <ul>
             {routes.map(({ name, path }) => (

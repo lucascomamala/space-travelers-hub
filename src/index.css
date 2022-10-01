@@ -10,6 +10,8 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  text-decoration: none;
+  color: unset;
 }
 
 .header-logo > img {
@@ -31,6 +33,7 @@ nav > ul > li {
 
 .nav-link {
   text-decoration: none;
+  color: unset;
 }
 
 .nav-link.active {
