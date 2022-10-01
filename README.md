@@ -11,7 +11,7 @@ Web application for a company that provides commercial and scientific space trav
 - React
 - Redux
 
-## Live Demo (if available)
+## Live Demo
 
 [Live Demo Link](https://heartfelt-squirrel-c4bce5.netlify.app)
 
